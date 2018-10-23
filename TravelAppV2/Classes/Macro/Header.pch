@@ -1,0 +1,77 @@
+//
+//  Header.pch
+//  TravelAppV1
+//
+//  Created by chenqiang on 15/10/6.
+//  Copyright © 2015年 chenqiang. All rights reserved.
+//
+
+#ifndef Header_pch
+#define Header_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//屏幕宽高
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#import <AVOSCloud/AVOSCloud.h>
+//----------------------------------首页
+
+#define kBannersURL @"http://mapi.mafengwo.cn/travelguide/ad/ads/statics/home_banner?o_lat=40.030601&oauth_version=1.0&oauth_nonce=987d53e2-edfe-4be1-b592-602666856d5f&oauth_consumer_key=5&screen_scale=1.5&device_type=android&hardware_model=SM-G5108Q&mfwsdk_ver=20140507&screen_width=540&device_id=FC%3A19%3A10%3A03%3A74%3A70&sys_ver=4.4.4&channel_id=BaiDu&oauth_signature=fKcPfsgVdFfIp1al75SD1Oo4lq8%3D&x_auth_mode=client_auth&o_lng=116.343664&oauth_signature_method=HMAC-SHA1&oauth_token=0_0969044fd4edf59957f4a39bce9200c6&open_udid=FC%3A19%3A10%3A03%3A74%3A70&app_ver=6.1.0&app_code=com.mfw.roadbook&oauth_timestamp=1444046223&screen_height=960"
+
+
+#define kHomeURL @"http://mapi.mafengwo.cn/travelguide/discovery/home?device_type=android&app_ver=6.1.0&open_udid=68%3A3e%3A34%3A0c%3Ace%3A6b&oauth_signature=smVFSgTJUZ%2FOF93iGKX%2BxzS%2Fqcc%3D&screen_height=1920&oauth_signature_method=HMAC-SHA1&oauth_consumer_key=5&oauth_version=1.0&oauth_timestamp=1444201217&oauth_nonce=854acb53-44fe-4706-a065-5ae879e7a01f&hardware_model=m2+note&device_id=68%3A3e%3A34%3A0c%3Ace%3A6b&sys_ver=5.1&uid=55843268&channel_id=MeiZu&screen_width=1080&oauth_token=55843268_3dffd8b26ca29cbfb462ee374efa04b2&screen_scale=3.0&mfwsdk_ver=20140507&x_auth_mode=client_auth&app_code=com.mfw.roadbook"
+
+     //适合十月份去的地方
+#define kHomeSuitplace @"http://mapi.mafengwo.cn/travelguide/discovery/topics?o_lat=40.030664&oauth_version=1.0&oauth_nonce=33155461-7bcf-43fd-a256-714bda22ffde&oauth_consumer_key=5&screen_scale=2.0&device_type=android&hardware_model=Lenovo+K30-T&mfwsdk_ver=20140507&screen_width=720&device_id=60%3Ad9%3Aa0%3A2d%3A51%3A99&sys_ver=4.4.4&channel_id=LianXiang&id=597&oauth_signature=VfDQPmd0K4fELZCRAx2f1qg%2FOSg%3D&x_auth_mode=client_auth&o_lng=116.343936&style=squares&start=0&oauth_signature_method=HMAC-SHA1&oauth_token=0_0969044fd4edf59957f4a39bce9200c6&open_udid=60%3Ad9%3Aa0%3A2d%3A51%3A99&app_ver=6.1.0&app_code=com.mfw.roadbook&oauth_timestamp=1444096865&screen_height=1280"
+    //周边游---(默认 北京)%E5%8C%97%E4%BA%AC  &longitude=116.343648&latitude=40.030561%20
+
+#define kNeaarByPlayURL @"http://appapi.yaochufa.com/v2/Product/GetAroundProductList?pageIndex=1&version=4.3.1&sort=n&province=1&system=iOS&pageSize=20&channel=AppStore&city="
+
+#define kNearByPalyDettail(a) [NSString stringWithFormat:@"http://appapi.yaochufa.com/v2/Product/GetProductInfoById?productId=%ld&version=4.3.1&system=iOS&channel=AppStore",a]
+
+
+//-----------------------------------
+
+#import "TravelLiteratureController.h"
+#import "TravelsCell.h"
+
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "TravelsNoteHelp.h"
+#import "UIImageView+WebCache.h"
+
+#define KBrowseUrla @"http://api.breadtrip.com/v2/index/?lat=%25s40.02895300000001&lng=%25s116.34369400000003"
+
+#import "TravelDetailCell.h"
+#import "TravelNotesDetails.h"
+#import "TravelNotesFrame.h"
+#import "TravelNotesModel.h"
+#import "TravelNoteHelp.h"
+#import "UIButton+WebCache.h"
+#import "TravelsNoteHelp.h"
+
+#define KCurrentUrl  [NSString stringWithFormat:@"http://api.breadtrip.com/trips/%ld/waypoints/",(unsigned long)self.TNid]
+
+#define KBrowseUrlb @"http://api.breadtrip.com/v2/index/?next_start=2387146880"
+
+#define KBrowseUrl @"http://api.breadtrip.com/v2/index/?lat=%25s40.02895300000001&lng=%25s116.34369400000003"
+
+#define KurlCity   @"http://appapi.yaochufa.com/v2/Position/GetCityList?machineCode=00000000-62a0-833f-ffff-ffffc33ba23b&version=4.3.1&system=android&channel=huaweimarket"
+#endif /* Header_pch */
+
+//----------------------------------主题游
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#define RecURL @"http://open.qyer.com/qyer/recommands/entry?app_installtime=1435837675&client_id=qyer_ios&client_secret=cd254439208ab658ddf9&count=20&page=1&track_app_channel=App%2520Store&track_app_version=6.3&track_device_info=iPhone7%2C2&track_deviceid=94600906-5BB7-43E7-9E16-C479A03EE469&track_os=ios%25208.3&v=1"
+
+#define THEMEUrl @"http://mapi.mafengwo.cn/travelguide/discovery/topics?o_lat=40.03096&oauth_version=1.0&oauth_nonce=3f76a29f-cb71-4ddb-b7b8-bb6c82290ed5&oauth_consumer_key=5&screen_scale=2.0&device_type=android&hardware_model=Lenovo+K30-T&mfwsdk_ver=20140507&screen_width=720&device_id=60%3Ad9%3Aa0%3A2d%3A51%3A99&sys_ver=4.4.4&channel_id=LianXiang&id=1141&oauth_signature=aIxG6U4L1v6CA113wDRDXTYPL4Q%3D&x_auth_mode=client_auth&o_lng=116.343997&style=squares&start=0&oauth_signature_method=HMAC-SHA1&oauth_token=0_0969044fd4edf59957f4a39bce9200c6&open_udid=60%3Ad9%3Aa0%3A2d%3A51%3A99&app_ver=6.1.0&app_code=com.mfw.roadbook&oauth_timestamp=1444044279&screen_height=1280"
+
+#endif
+
+
+

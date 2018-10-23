@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MINAboutViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDk-gX-I8c">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="简介:这是一款介绍各个地区游玩的app,告诉你不一样的玩法,带体验更多样的旅游体验,好吃的好玩的都给你总结出来了," textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3t-aS-ABP">
+                            <rect key="frame" x="15" y="100" width="345" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="rin-9a-tvz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本:1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5P-qJ-hOR">
+                            <rect key="frame" x="15" y="210" width="345" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="g3t-aS-ABP" secondAttribute="trailing" constant="15" id="2Xo-HV-bI6"/>
+                        <constraint firstItem="E5P-qJ-hOR" firstAttribute="top" secondItem="g3t-aS-ABP" secondAttribute="bottom" constant="10" id="Jey-sl-Hcc"/>
+                        <constraint firstAttribute="trailing" secondItem="E5P-qJ-hOR" secondAttribute="trailing" constant="15" id="MCK-Eo-Qh2"/>
+                        <constraint firstItem="E5P-qJ-hOR" firstAttribute="leading" secondItem="IDk-gX-I8c" secondAttribute="leading" constant="15" id="Q1c-w7-Ekr"/>
+                        <constraint firstItem="g3t-aS-ABP" firstAttribute="leading" secondItem="IDk-gX-I8c" secondAttribute="leading" constant="15" id="jig-1o-fXL"/>
+                        <constraint firstItem="g3t-aS-ABP" firstAttribute="top" secondItem="IDk-gX-I8c" secondAttribute="top" constant="100" id="zon-OR-msz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IDk-gX-I8c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1WV-wT-9kg"/>
+                <constraint firstAttribute="bottom" secondItem="IDk-gX-I8c" secondAttribute="bottom" id="Hbt-ef-955"/>
+                <constraint firstItem="IDk-gX-I8c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bSA-Qq-DhJ"/>
+                <constraint firstAttribute="trailing" secondItem="IDk-gX-I8c" secondAttribute="trailing" id="sBG-fh-987"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,12 @@
+platform :ios, '8.3'
+def pods 
+pod 'MJRefresh', '~> 3.1.15.7'
+pod 'UMCCommon'
+pod 'UMCSecurityPlugins'
+pod 'UMCShare/UI'
+pod 'UMCShare/Social/QQ'
+pod 'UMCShare/Social/WeChat'
+end
+target 'TravelAppV2' do
+  pods
+end

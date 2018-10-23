@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="KGk-i7-Jjw" customClass="NearByCell">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S6y-2K-dyB">
+                        <rect key="frame" x="0.0" y="0.0" width="329" height="85"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="psb.png" translatesAutoresizingMaskIntoConstraints="NO" id="xHN-7m-5bE">
+                                <rect key="frame" x="8" y="8" width="85" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="OYw-Yk-KAO"/>
+                                    <constraint firstAttribute="width" constant="103" id="dIe-zZ-zBb"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dIe-zZ-zBb"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="dIe-zZ-zBb"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[北京]国粹明远,曾经的辉煌残存至今,悼念沉甸甸的历史" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEP-m3-006">
+                                <rect key="frame" x="103" y="37" width="215" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="4lS-Ul-hsE"/>
+                                    <constraint firstAttribute="height" constant="43" id="vJd-zf-VdA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="vJd-zf-VdA"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="vJd-zf-VdA"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="圆明园国粹名圆记录历史" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDj-gw-Jlw">
+                                <rect key="frame" x="101" y="18" width="236" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qDj-gw-Jlw" firstAttribute="leading" secondItem="xHN-7m-5bE" secondAttribute="trailing" constant="5" id="0vt-Ts-QvK"/>
+                            <constraint firstItem="WEP-m3-006" firstAttribute="leading" secondItem="xHN-7m-5bE" secondAttribute="trailing" constant="10" id="9UQ-Jp-TbQ"/>
+                            <constraint firstAttribute="bottom" secondItem="WEP-m3-006" secondAttribute="bottom" constant="5" id="AzM-7G-rQ3"/>
+                            <constraint firstItem="WEP-m3-006" firstAttribute="leading" secondItem="xHN-7m-5bE" secondAttribute="trailing" constant="5" id="Bbp-aX-El7"/>
+                            <constraint firstItem="WEP-m3-006" firstAttribute="leading" secondItem="qDj-gw-Jlw" secondAttribute="leading" constant="2" id="Bim-d8-XkG"/>
+                            <constraint firstItem="xHN-7m-5bE" firstAttribute="leading" secondItem="S6y-2K-dyB" secondAttribute="leading" id="Mjm-7G-tMU"/>
+                            <constraint firstAttribute="trailing" secondItem="qDj-gw-Jlw" secondAttribute="trailing" id="VRb-GI-tMy"/>
+                            <constraint firstItem="qDj-gw-Jlw" firstAttribute="leading" secondItem="xHN-7m-5bE" secondAttribute="trailing" constant="8" id="lbn-rP-WK5"/>
+                            <constraint firstAttribute="bottom" secondItem="xHN-7m-5bE" secondAttribute="bottom" constant="-23" id="mpt-a8-cwd"/>
+                            <constraint firstItem="xHN-7m-5bE" firstAttribute="top" secondItem="S6y-2K-dyB" secondAttribute="top" id="mzr-Ho-ne9"/>
+                            <constraint firstAttribute="trailing" secondItem="WEP-m3-006" secondAttribute="trailing" constant="11" id="qfj-zn-24b"/>
+                            <constraint firstItem="qDj-gw-Jlw" firstAttribute="top" secondItem="S6y-2K-dyB" secondAttribute="topMargin" id="tWF-4d-Ldi"/>
+                            <constraint firstAttribute="trailing" secondItem="WEP-m3-006" secondAttribute="trailing" constant="18" id="vB1-Cs-eCR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRandius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Mjm-7G-tMU"/>
+                                <exclude reference="mpt-a8-cwd"/>
+                                <exclude reference="mzr-Ho-ne9"/>
+                                <exclude reference="0vt-Ts-QvK"/>
+                                <exclude reference="VRb-GI-tMy"/>
+                                <exclude reference="tWF-4d-Ldi"/>
+                                <exclude reference="Bbp-aX-El7"/>
+                                <exclude reference="vB1-Cs-eCR"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Mjm-7G-tMU"/>
+                                <include reference="mpt-a8-cwd"/>
+                                <include reference="mzr-Ho-ne9"/>
+                                <include reference="0vt-Ts-QvK"/>
+                                <include reference="VRb-GI-tMy"/>
+                                <include reference="tWF-4d-Ldi"/>
+                                <include reference="Bbp-aX-El7"/>
+                                <include reference="vB1-Cs-eCR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="S6y-2K-dyB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EJI-ge-Mtq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="S6y-2K-dyB" secondAttribute="trailing" constant="11" id="O5v-U0-Mae"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WEP-m3-006" secondAttribute="bottom" constant="9" id="UYx-Um-R45"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="S6y-2K-dyB" secondAttribute="bottom" constant="1" id="jwo-fj-YHR"/>
+                    <constraint firstItem="S6y-2K-dyB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pf6-du-zS7"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="UYx-Um-R45"/>
+                    </mask>
+                </variation>
+                <variation key="widthClass=compact">
+                    <mask key="constraints">
+                        <include reference="UYx-Um-R45"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qDj-gw-Jlw" secondAttribute="trailing" constant="11" id="NDo-Pt-XeZ"/>
+                <constraint firstItem="qDj-gw-Jlw" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="18" id="eVn-n2-HpJ"/>
+                <constraint firstItem="xHN-7m-5bE" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="8" id="lk0-Vw-OZc"/>
+                <constraint firstItem="xHN-7m-5bE" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="8" id="oQ6-PK-ibH"/>
+                <constraint firstAttribute="trailing" secondItem="xHN-7m-5bE" secondAttribute="trailing" constant="255" id="vSb-EQ-Fa7"/>
+            </constraints>
+            <connections>
+                <outlet property="img" destination="xHN-7m-5bE" id="uLi-ov-gKh"/>
+                <outlet property="littleTitle" destination="WEP-m3-006" id="XpV-Yh-kve"/>
+                <outlet property="title" destination="qDj-gw-Jlw" id="EIY-gc-9Ke"/>
+            </connections>
+            <point key="canvasLocation" x="442" y="252.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="psb.png" width="270" height="200"/>
+    </resources>
+</document>

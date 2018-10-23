@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="U6b-Vx-4bR" customClass="HeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="25"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFy-2g-muJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="25"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bj.png" translatesAutoresizingMaskIntoConstraints="NO" id="xoq-hO-rgD">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="25"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awJ-dd-reK">
+                            <rect key="frame" x="62" y="2" width="250" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="250" id="Qny-gj-kvl"/>
+                                <constraint firstAttribute="height" constant="21" id="YSo-tH-TO9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.23785771280542589" green="0.19305357985646099" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="widthClass=compact">
+                                <mask key="constraints">
+                                    <exclude reference="Qny-gj-kvl"/>
+                                    <exclude reference="YSo-tH-TO9"/>
+                                </mask>
+                            </variation>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.87108838889999995" blue="0.87221108420000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="awJ-dd-reK" firstAttribute="centerX" secondItem="uFy-2g-muJ" secondAttribute="centerX" id="1Dv-cF-aY3"/>
+                        <constraint firstAttribute="trailing" secondItem="xoq-hO-rgD" secondAttribute="trailing" id="1qU-6v-XCU"/>
+                        <constraint firstItem="xoq-hO-rgD" firstAttribute="top" secondItem="uFy-2g-muJ" secondAttribute="top" id="9Nc-UQ-kRL"/>
+                        <constraint firstItem="awJ-dd-reK" firstAttribute="top" secondItem="uFy-2g-muJ" secondAttribute="top" constant="2" id="9uB-k0-2am"/>
+                        <constraint firstItem="awJ-dd-reK" firstAttribute="leading" secondItem="uFy-2g-muJ" secondAttribute="leading" constant="62" id="DCZ-du-bpJ"/>
+                        <constraint firstItem="xoq-hO-rgD" firstAttribute="leading" secondItem="uFy-2g-muJ" secondAttribute="leading" id="Ice-EA-bdW"/>
+                        <constraint firstItem="awJ-dd-reK" firstAttribute="centerX" secondItem="xoq-hO-rgD" secondAttribute="centerX" id="SP0-2K-cPT"/>
+                        <constraint firstItem="awJ-dd-reK" firstAttribute="centerY" secondItem="uFy-2g-muJ" secondAttribute="centerY" id="UWc-m9-vkl"/>
+                        <constraint firstAttribute="height" constant="25" id="b6o-R3-mXk"/>
+                        <constraint firstAttribute="bottom" secondItem="xoq-hO-rgD" secondAttribute="bottom" id="h4U-76-SQ9"/>
+                        <constraint firstItem="awJ-dd-reK" firstAttribute="centerY" secondItem="xoq-hO-rgD" secondAttribute="centerY" id="xwp-iT-9RF"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="b6o-R3-mXk"/>
+                            <exclude reference="1Dv-cF-aY3"/>
+                            <exclude reference="9uB-k0-2am"/>
+                            <exclude reference="DCZ-du-bpJ"/>
+                            <exclude reference="SP0-2K-cPT"/>
+                            <exclude reference="UWc-m9-vkl"/>
+                            <exclude reference="xwp-iT-9RF"/>
+                            <exclude reference="1qU-6v-XCU"/>
+                            <exclude reference="9Nc-UQ-kRL"/>
+                            <exclude reference="Ice-EA-bdW"/>
+                            <exclude reference="h4U-76-SQ9"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="b6o-R3-mXk"/>
+                            <include reference="1Dv-cF-aY3"/>
+                            <include reference="9uB-k0-2am"/>
+                            <include reference="DCZ-du-bpJ"/>
+                            <include reference="SP0-2K-cPT"/>
+                            <include reference="UWc-m9-vkl"/>
+                            <include reference="xwp-iT-9RF"/>
+                            <include reference="1qU-6v-XCU"/>
+                            <include reference="9Nc-UQ-kRL"/>
+                            <include reference="Ice-EA-bdW"/>
+                            <include reference="h4U-76-SQ9"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uFy-2g-muJ" secondAttribute="trailing" id="4es-On-cIM"/>
+                <constraint firstItem="uFy-2g-muJ" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="532-V1-ooL"/>
+                <constraint firstAttribute="bottom" secondItem="uFy-2g-muJ" secondAttribute="bottom" id="Kvo-5Y-SCu"/>
+                <constraint firstItem="uFy-2g-muJ" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Uwn-I1-VeU"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4es-On-cIM"/>
+                    <exclude reference="532-V1-ooL"/>
+                    <exclude reference="Kvo-5Y-SCu"/>
+                    <exclude reference="Uwn-I1-VeU"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="4es-On-cIM"/>
+                    <include reference="532-V1-ooL"/>
+                    <include reference="Kvo-5Y-SCu"/>
+                    <include reference="Uwn-I1-VeU"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="title4Label" destination="awJ-dd-reK" id="arC-AX-lYk"/>
+            </connections>
+            <point key="canvasLocation" x="330.5" y="369.5"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="bj.png" width="640" height="1136"/>
+    </resources>
+</document>

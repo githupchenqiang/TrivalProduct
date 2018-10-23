@@ -1,0 +1,48 @@
+PODS:
+  - MJRefresh (3.1.15.7)
+  - UMCCommon (1.5.2)
+  - UMCSecurityPlugins (1.0.6)
+  - UMCShare/Core (6.9.4):
+    - UMCCommon
+  - UMCShare/Social/QQ (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+    - UMCShare/Social/ReducedQQ
+  - UMCShare/Social/ReducedQQ (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedWeChat (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/WeChat (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+    - UMCShare/Social/ReducedWeChat
+  - UMCShare/UI (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+
+DEPENDENCIES:
+  - MJRefresh (~> 3.1.15.7)
+  - UMCCommon
+  - UMCSecurityPlugins
+  - UMCShare/Social/QQ
+  - UMCShare/Social/WeChat
+  - UMCShare/UI
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MJRefresh
+    - UMCCommon
+    - UMCSecurityPlugins
+    - UMCShare
+
+SPEC CHECKSUMS:
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  UMCCommon: 4392868ac47ff1b101663106bb114ba616fabbad
+  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
+  UMCShare: aa233aecad67979930fe43f3a2f676023b669439
+
+PODFILE CHECKSUM: cb864fef98a6e45e0a39f2d9a849389e5f33a577
+
+COCOAPODS: 1.5.3
