@@ -109,7 +109,7 @@
     [super viewWillAppear:animated];
     _sview.hidden = NO;
     _Aview.hidden = NO;
-    self.locatCity = @"北京";
+//    self.locatCity = @"北京";
     [[NearByHelper shareNearByHelper] requestNearByPlace:self.locatCity WithFinised:^{
         [self.tableView reloadData];
     }];
@@ -128,7 +128,7 @@
     [super viewDidLoad];
     
     _Page = 1;
-    _cityname = @"北京";
+//    _cityname = @"北京";
     _DataArray = [NSMutableArray array];
     //增加监听者
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ListenToInform:) name:@"tongzhi1" object:nil];
@@ -372,7 +372,7 @@
 //去 "周边游页面"
 - (void)goNearbyPage{
     NearByViewController *neVC = [[NearByViewController alloc] init];
-    neVC.locatCity = @"北京";
+//    neVC.locatCity = @"北京";
     [self showViewController:neVC sender:nil];
 }
 #pragma mark -- collection dataSource
